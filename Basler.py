@@ -3,8 +3,8 @@ __author__ = 'Majkl'                                                            
 import time                                                                                                        #Importuje knihovnu time
 import webbrowser                                                                                                  #Importuje knihovnu webbrowser
 
-t = time.localtime()
-current_time = time.strftime("%H:%M", t)
+t = time.localtime()                                                                                               #hodnota t je stejná jako time.localtime()
+current_time = time.strftime("%H:%M", t)                                                                           #hodnota current_time je stejná jako time.strftime("%H:%M", t)
 
 print("Zdravím. Jsem pouze jednoduchej script v Pythonu")                                                          # v terminálu napíše věc, co je v závorce
 time.sleep(1)                                                                                                      #počká 1 sekundu
@@ -36,13 +36,13 @@ elif otazka == "Rick":                                                          
     print("Oh. Ty jsi našel skrytou část kódu. Well, tohle máš za odměnu ")                                        # v terminálu napíše věc, co je v závorce
     webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                                                 #otevře se výchozí prohlížeč a spustí stránku
     exit                                                                                                           #konec
-elif otazka == "Autor":
-    print(" ")
-    print("Mým autorem je Michal Basler (E3)")
-    print("Byl jsem vytvořen 5.1.2021")
-    print("Pokud bude mít líné hovado na mě čas, tak mé aktualizace naleznete zde:" )
-    print("https://github.com/Majklzbastlirny/SIV-Python-Simple")
-    exit
+elif otazka == "Autor":                                                                                            #pokud je odpověď Autor, vypíše se do terminálu text níže
+    print(" ")                                                                                                     # v terminálu napíše mezeru
+    print("Mým autorem je Michal Basler (E3)")                                                                     # v terminálu napíše věc, co je v závorce
+    print("Byl jsem vytvořen 5.1.2021")                                                                            # v terminálu napíše věc, co je v závorce
+    print("Pokud bude mít líné hovado na mě čas, tak mé aktualizace naleznete zde:" )                              # v terminálu napíše věc, co je v závorce
+    print("https://github.com/Majklzbastlirny/SIV-Python-Simple")                                                  # v terminálu napíše věc, co je v závorce
+    exit                                                                                                           #konec
 else:                                                                                                              #nebo
     print("Omlouvám se, ale to nebyla očekávaná odpověď. Nyní se ukončím")                                         # v terminálu napíše věc, co je v závorce
 exit                                                                                                               #konec
